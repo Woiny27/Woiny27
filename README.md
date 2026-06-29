@@ -28,32 +28,32 @@ graph TD
     A[Clinician/Patient Interaction] --> B(Rugged Edge Device)
 
     B --> C{Input Modules}
-    C --> C1[Speech-to-Text (STT) Engine]
-    C --> C2[Optional: Image/Sensor Input]
+    C --> C1["Speech-to-Text (STT) Engine"]
+    C --> C2["Optional: Image/Sensor Input"]
 
-    C1 --> D[Gemma 4 E4B Model (On-Device)]
+    C1 --> D["Gemma 4 E4B Model (On-Device)"]
     C2 --> D
 
-    D --> E{Processing & Orchestration Layer}
-    E --> E1[Intent Recognition & NLU]
-    E --> E2[Function Calling Handler]
-    E --> E3[Agentic Retrieval Logic]
+    D --> E{"Processing & Orchestration Layer"}
+    E --> E1["Intent Recognition & NLU"]
+    E --> E2["Function Calling Handler"]
+    E --> E3["Agentic Retrieval Logic"]
 
-    E1 --> F[Local Medical Knowledge Base (Vector DB / Structured DB)]
-    E2 --> G[Local Tools (e.g., Drug Calculator, Guidelines)]
+    E1 --> F["Local Medical Knowledge Base (Vector DB / Structured DB)"]
+    E2 --> G["Local Tools (e.g., Drug Calculator, Guidelines)"]
     E3 --> F
 
     F --> D
     G --> D
 
     D --> H{Output Modules}
-    H --> H1[Clinical Note Generation]
-    H --> H2[Contextual Clinical Prompts]
-    H --> H3[Patient Education Material Generation]
-    H --> H4[Language Translation]
+    H --> H1["Clinical Note Generation"]
+    H --> H2["Contextual Clinical Prompts"]
+    H --> H3["Patient Education Material Generation"]
+    H --> H4["Language Translation"]
 
-    H1 --> I[Secure Local Storage]
-    H2 --> J[Clinician UI/Display]
+    H1 --> I["Secure Local Storage"]
+    H2 --> J["Clinician UI/Display"]
     H3 --> J
     H4 --> J
 
@@ -79,4 +79,3 @@ graph TD
     style I fill:#fdd,stroke:#333,stroke-width:2px;
     style J fill:#ddf,stroke:#333,stroke-width:2px;
     linkStyle 0 stroke:#000,stroke-width:1px;
-```
