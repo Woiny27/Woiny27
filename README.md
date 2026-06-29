@@ -23,7 +23,6 @@ This repository details the high-level architecture, hardware platforms, optimiz
 
 This architecture focuses on maximizing on-device processing for privacy and offline capability, leveraging Gemma 4 E4B's efficiency.
 
-```mermaid
 graph TD
     A[Clinician/Patient Interaction] --> B(Rugged Edge Device)
 
@@ -48,7 +47,7 @@ graph TD
 
     D --> H{Output Modules}
     H --> H1["Clinical Note Generation"]
-    H --> H2["Contextual Clinical Prompts"]
+    H2 --> H2["Contextual Clinical Prompts"]
     H --> H3["Patient Education Material Generation"]
     H --> H4["Language Translation"]
 
